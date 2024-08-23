@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.none{
+  display: none;
+}
+.placar{
+  position: absolute;
+  width: 190px;
+  padding: 2px;
+  bottom: 0px;
+  border-top: solid 1px #fff;
+  background-color: #fff;
+  opacity: .8;
+  left: 0;
+}
+#placar-resultado{
+  letter-spacing: .07em;
+  text-align: center;
+}
+@media (max-width: 575.98px){
+  #div_apresentacao{
+    margin-top: 10px;
+  }
+  #text_apresentacao{
+    font-size: 2.5em;
+    margin-top: 25px;
+    
+  }
+  #texto_escolhaApp{
+    font-size: 1em;
+    margin-top: 25px;
+  }
+  #opcoes_usuario{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

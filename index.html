@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="css/style.css" >
+  <script src="js/scripts.js" defer>
+  </script>
+  <title>Jo-Ken-Po</title>
+</head>
+<body style="height: 100%;" class="bg-warning">
+      <div class="container">
+        <!-- Apresentação -->
+        <div class="row justify-content-center" id="div_apresentacao">
+          <div id="apresentacao" class="">
+            <h1 id="text_apresentacao" class="display-4                                     text-center mb-1"
+            >
+              Escolha uma opção
+            </h1>
+          </div>
+        </div>
+        <!-- Escolha APP -->
+        <div class="row justify-content-center mb-3       
+                    align-items-center"
+        >
+          <div class="col-4 col-md-3 text-center ">
+            <h2 id="texto_escolhaApp">
+                Escolha App
+            </h2>
+            <img style="width: 90%; border-radius: 50%;" id="escolhaSistema">
+          </div>
+        </div>
+        <!-- OPÇÕES USUÁRIO -->
+        <div class="row" id="opcoes_usuario">
+          <div class="d-flex justify-content-center">
+            
+            <div class="col-4 col-md-3 " >
+            <button
+              style="width: 100%;  " 
+              class="btn btn-outline-light"
+              onclick="verificarEscolha('pedra')"
+            >
+              <img src="img/pedra.png" style="width: 100%;border-radius: 50%; ">
+              <p>Pedra</p>
+            </button>
+          </div>
+
+          <div class="col-4 col-md-3 ">
+            <button 
+              style="width: 100%; " 
+              class="btn btn-outline-light" 
+              onclick="verificarEscolha('papel')"
+              >
+              <img src="img/papel.png" style="width: 100%;border-radius: 50%; ">
+              <p>Papel</p>
+            </button>
+            </div>
+            
+            <div class="col-4 col-md-3 ">
+            <button 
+              class="btn btn-outline-light"
+              style="width: 100%;"
+              onclick="verificarEscolha('tesoura')"
+              >
+              <img src="img/tesoura.png" style="width: 100%; border-radius: 50%; ">
+              <p>Tesoura</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-2">
+        <div>
+                  <h2 id="resultado" class="text-center ">RESULTADO</h2>
+        </div>
+      </div>
+      <div class="placar">
+        <div>
+                  <h6 id="placar-resultado"  class="text-center "> Placar</h6>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
